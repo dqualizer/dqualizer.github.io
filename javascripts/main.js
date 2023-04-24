@@ -29,3 +29,10 @@ function includeHTML() {
     }
   }
 }
+
+function openMenu() {
+  const menuItems = document.getElementsByClassName("mobile-menu-point");
+  for (let i = 0; i < menuItems.length; i++) {
+    menuItems.item(i).classList.toggle("visible");
+  }
+}
